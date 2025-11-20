@@ -46,19 +46,9 @@ class Config:
             'finnhub': bool(self.FINNHUB_KEY)
         }    
     # Reddit API credentials (provided)
-    #REDDIT_CLIENT_ID = "HQS2vBLyvf7KC1wu5XCYaQ"
-    #REDDIT_CLIENT_SECRET = "C_cfUlj-jhJzictGVvXaYTmX2gu2Dg"
-    #REDDIT_USER_AGENT = "MemeStockAnalyzer/2.0 by AdvancedTrader"
-    #REDDIT_CLIENT_ID = None
-    #REDDIT_CLIENT_SECRET = None
-    # Finnhub API credentials (multiple attempts to set)
-    #print("🔑 Setting Finnhub key...")
-    #FINNHUB_KEY = "d2m76s9r01qq6fop9okgd2m76s9r01qq6fop9ol0"
     FINNHUB_KEY = None
     #print(f"🔑 FINNHUB_KEY set to: {repr(FINNHUB_KEY)}")
     
-    #FINNHUB_SECRET = "d2m76s9r01qq6fop9om0"
-    #FINNHUB_SECRET = None
     # Alpha Vantage API key (optional - from environment only)
     #ALPHA_VANTAGE_KEY = os.getenv('ALPHA_VANTAGE_KEY', None)
     
@@ -71,7 +61,6 @@ class Config:
     #    print(f"🔍 In __init__, FINNHUB_KEY is: {repr(self.FINNHUB_KEY)}")
     #    
     #    # Force set it again in init
-    #    #self.FINNHUB_KEY = "d2m76s9r01qq6fop9okgd2m76s9r01qq6fop9ol0"
     #    self.FINNHUB_KEY = None
     #    print(f"🔧 After forcing in __init__, FINNHUB_KEY is: {repr(self.FINNHUB_KEY)}")
     
@@ -130,8 +119,8 @@ class Config:
 print(f"🔍 After class definition, Config.FINNHUB_KEY is: {repr(Config.FINNHUB_KEY)}")
 
 # Force set it one more time
-#Config.FINNHUB_KEY = "d2m76s9r01qq6fop9okgd2m76s9r01qq6fop9ol0"
 Config.FINNHUB_KEY = None
 print(f"🔧 After forcing class attribute, Config.FINNHUB_KEY is: {repr(Config.FINNHUB_KEY)}")
+
 
 print("✅ Config file loaded")
