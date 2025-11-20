@@ -1,0 +1,27 @@
+# Additional packages needed for predictive analysis feature
+# Add these to your existing requirements.txt
+
+# For predictive modeling and statistical analysis
+scipy>=1.9.0
+matplotlib>=3.5.0
+
+# For Finnhub API integration
+finnhub-python>=2.4.0
+
+# These should already be in your existing requirements, but ensure versions:
+pandas>=1.5.0
+numpy>=1.21.0
+yfinance>=0.1.87
+praw>=7.6.0
+textblob>=0.17.1
+requests>=2.28.0
+
+# Optional: For enhanced plotting (if you want more sophisticated charts)
+seaborn>=0.11.0
+plotly>=5.11.0
+
+# Installation command:
+# pip install scipy matplotlib finnhub-python seaborn plotly
+
+# Or if you prefer to update your requirements.txt:
+# pip install -r requirements.txt
